@@ -1,6 +1,6 @@
 #include <iostream>
 #include <fstream>
-#include <cstring>  // For strlen, strcmpi or strcasecmp
+#include <cstring>  // For strlen, strcasecmp
 #include <cctype>   // For isdigit
 #include <algorithm> // For std::sort
 using namespace std;
@@ -33,7 +33,7 @@ bool compareByName(const PhoneRec &a, const PhoneRec &b) {
 int main() {
     PhoneRec List[LIST_LENGTH];     // Array of phone records
     char line[LINE_SIZE];           // Line of text from the disk
-    char filename[] = "phonebook.txt";  // Update path here
+    char filename[] = "phony422.txt";  // Update the path here to your plain text file
     int searchCounter = 0;
 
     // Open the file
@@ -181,8 +181,3 @@ int main() {
 
     return 0;
 }
-
-
-//Run this: 
-//g++ -o phonebook searching.lab.cpp
-//./phonebook
